@@ -4,89 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
     <title>Stiven's portfolio</title>
     <meta name=viewport” content=”width-device-width, initial-scale=1”>
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="styles.css"/>
+
+    <!--Oswald Font-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#Home" class="selected"> Home</a></li>
-                <li><a href="#About"> About</a></li>
-                <li><a href="#Skills"> Skills</a></li>
-                <li><a href="#Contact"> Contact</a></li>
+    <div class="container">
+        <nav class="nav-main">
+
+            <ul class="nav-menu">
+
+                <li>
+                    <i class="fa-solid fa-code"></i>
+                </li>
+
+                <li>
+                    <a href="#">About me</a>
+                </li>
+
+                <li>
+                    <a href="#">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+
+                <li>
+                    <a href="#">Proyects</a>
+                </li>
             </ul>
-            </nav>
-    </header>
 
-    <section>
-        <article>
-            <div class="ContenedorPrincipal">
-                <div>
-                    <h2>Hi, i'm Jhoan</h2>
-                    <h1>Systems Engineer</h1>
-                    <p>I'm focus on full stack development</p>
-                    
-                    <button>Contact me</button>            
-                </div>
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="linea-horizontal"></div>
+
+        <!--SHOWCASE-->
+        <header class="showcase">
+            <h2>Hi, i'm Jhoan</h2>
+            <p>Systems Engineer;
+                I'm focus on full stack development</p>
+            <a href="#" class="btn">Contact me</a>
+        </header>
+
+        <!--Proyects-->
+        <div class="proyect-cards">
+            <div>
+                <img src="assets/images/proyectoPetlocale.png" alt="github">
+                <h3>Petlocale (Android)</h3>
+                <p>Application for the management of veterinary products and services</p>
+                <a>Link</a>
             </div>
-        </article>
-        
-        <article>
-            <div id="About" class="ContenedorPrincipal">
-                <div>
-                    <h2>About me!</h2>
-                    <p>I am a professional passionate about web development,
-                        I am a graduate of the UAN (Antonio Nariño University),
-                        the following is my professional profile:
-                    </p>
 
-                    <ul>
-                        <li>
-                            dentify, formulate and solve problems related to technology
-                            computing.
-                        </li>I
-
-                        <li>
-                            Work on projects of design and construction of information systems
-                            through the use of modern technologies.
-                        </li>
-
-                        <li>
-                            Use of techniques, skills and tools necessary for the practice of engineering
-                            of software.
-                             Recognize th
-                        </li>
-
-                        <li>
-                            Have a full understanding of professional and ethical responsibility.
-                        </li> 
-                    </ul>
-                </div>
-
+            <div>
+                <img src="assets/images/proyecto2.jpg" alt="github">
+                <h3>Inventory</h3>
+                <p>Inventory application using nodejs, mysql, express and javascript</p>
+                <a>Link</a>
             </div>
-        </article>
 
-        <article>
-            <div id="Skills" class="ContenedorPrincipal">
-                <div>
-                    <h2>My Skills</h2>
-                    <p>I have knowledge in the following technologies:
-                    </p>
-                </div>
+            <div>
+                <img src="assets/images/proyecto3.jpg" alt="github">
+                <h3>NodeJS Backend</h3>
+                <p>API example to create users and view them on different endpoints.</p>
+                <a>Link</a>
             </div>
-        </article>
+        </div>
 
-        <article>
-            <div id="Contact">
-
+        <!--Banner-->
+        <div class="skills-banner">
+            <div class="content">
+                <h2>Skills</h2>
+                <p>I have knowledge in the following technologies:</p>
+                <a href="#" class="btn"></a>
             </div>
-        </article>
-    </section>
-    
-    <footer>
-        
-    </footer>
+
+        </div>
+    </div>
 </body>
 </html>
