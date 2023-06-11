@@ -58,6 +58,15 @@ ul{
     padding: 10px;
 }
 
+.menu-btn{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.5rem;
+}
+
 .linea-horizontal {
     margin: 5px;
     border-top: 1px solid #ffffff; 
@@ -75,6 +84,7 @@ ul{
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    padding-bottom: 50px;
     margin-bottom: 20px;
 }
 
@@ -103,9 +113,10 @@ ul{
 
 .proyect-cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    margin: 10px 0;
+    margin: 70px 0;
+    
 }
 
 .proyect-cards img{
@@ -114,6 +125,7 @@ ul{
 }
 
 .proyect-cards h3{
+    color: yellow;
     text-decoration: underline;
     font-size: 20px;
     margin: 10px 0;
@@ -136,14 +148,115 @@ ul{
 /*SKILLS banner*/
 
 .skills-banner{
-    margin-top: 50px;
     width: 100%;
-    height: 350px;
+    height: 550px;
     background: url('./assets/images/banner.jpg');
+    margin-bottom: 40px;
 }
 
 .skills-banner .content{
     width: 40%;
     padding: 90px 0 0 30px;
     color: #ffffff;
+}
+
+.skills-banner p,
+.skills-banner h2 {
+    margin: 10px 0 20px 0;
+}
+
+.skills-banner h2 {
+    font-size: 40px;
+}
+
+.skills-banner .content i{
+    font-size: 2rem;
+}
+
+.skills-banner .content ul {
+    display: flex;
+}
+
+.skills-banner .content ul li {
+    padding: 10px;
+}
+
+/*Contact*/
+
+.social {
+    margin: 50px;
+}
+
+.social p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 10px;
+}
+
+.links a i{
+    font-size: 3rem;
+}
+
+.footer{
+    clear: both;
+    background: #2f3640;
+    color: white;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media (max-width:700px){
+
+    .nav-main ul.nav-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 100%;
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+        padding: 30px;
+        opacity: .9;
+    }
+
+    .nav-main ul.nav-menu-right{
+        position: absolute;
+        cursor: pointer;
+        top: 10px;
+        right: 50px;
+        z-index: 2;
+        font-size: 1.2rem;
+    }
+
+    .nav-main ul.nav-menu.show{
+        transform: translateX(-20px);
+    }
+    
+
+    .proyect-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skills-banner .content{
+        width: 90%;
+    }
+
+    .skills-banner .content ul {
+        font-size: 0.8rem;
+        padding: 2px;
+    }
+
 }
