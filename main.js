@@ -1,4 +1,11 @@
+
 document.querySelector('.menu-btn').addEventListener('click', () =>{
+    var boton2 = document.getElementById('menu-btn2');
+    boton2.style.display = 'block';
+    document.querySelector('.nav-menu').classList.toggle('show')
+});
+
+document.querySelector('.menu-btn2').addEventListener('click', () =>{
     document.querySelector('.nav-menu').classList.toggle('show');
 });
 
